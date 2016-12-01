@@ -6,8 +6,8 @@
 </head>
 <body>
 	Page d'accueil des Yamete Kudasai pour pouvoir manger des Pizza ! <br /> 
-	<a href="/yamete-kudasai.png" /> <br />
-	<a href="/pizza.jpg" /> <br />
+	<img src="/yamete-kudasai.png" /> <br />
+	<img src="/pizza.jpg" /> <br />
 
 </body>
 </html>
