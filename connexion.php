@@ -25,11 +25,9 @@ if(isset($_POST['formconnexion'])) {
 }
 ?>
 <html>
-   <head>
-      <title>Les Yamete Kudasai</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
+   <?php include_once "head.php";?>
+   <body class="navbar-fixed-top">
+      <?php include_once "header.php";?>
       <div align="center">
          <h2>Connexion</h2>
          <br /><br />
@@ -45,5 +43,6 @@ if(isset($_POST['formconnexion'])) {
          }
          ?>
       </div>
+      <?php include_once "footer.php";?>
    </body>
 </html>

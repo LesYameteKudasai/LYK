@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
+$bdd = new PDO('mysql:host=127.0.0.1;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_POST['forminscription'])) {
    $nom = htmlspecialchars($_POST['nom']);
@@ -51,11 +51,9 @@ if(isset($_POST['forminscription'])) {
 ?>
 
 <html>
-   <head>
-      <title>Les Yamete Kudasai</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
+   <?php include_once "head.php"; ?>
+   <body class="navbar-fixed-top">
+      <?php include_once "header.php";?>
       <div align="center">
          <h2>Inscription</h2>
          <br /><br />
@@ -132,5 +130,6 @@ if(isset($_POST['forminscription'])) {
          }
          ?>
       </div>
+      <?php include_once "footer.php";?>
    </body>
 </html>
