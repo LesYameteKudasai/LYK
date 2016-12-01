@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=94.177.233.5;dbname=espace_membre', 'root', 'iut');
+$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_POST['forminscription'])) {
    $nom = htmlspecialchars($_POST['nom']);
@@ -14,14 +14,14 @@ if(isset($_POST['forminscription'])) {
       if($pseudolength <= 255) {
          if($mail == $mail2) {
             if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-               $reqmail = $bdd->prepare("SELECT * FROM membres WHERE mail = ?");
+               $reqmail = $bdd->prepare("SELECT * FROM refugie WHERE mail = ?");
                $reqmail->execute(array($mail));
                $mailexist = $reqmail->rowCount();
                if($mailexist == 0) {
                   if($mdp == $mdp2) {
                      if(preg_match('#^[A-Za-z]{1,}$#', $nom) AND preg_match('#^[A-Za-z]{1,}$#', $prenom))
                      {
-                     $insertmbr = $bdd->prepare("INSERT INTO membres(nom, prenom, pseudo, mail, motdepasse) VALUES(?, ?, ?, ?, ?)");
+                     $insertmbr = $bdd->prepare("INSERT INTO refugie(nom, prenom, pseudo, mail, motdepasse) VALUES(?, ?, ?, ?, ?)");
                      $insertmbr->execute(array($nom, $prenom, $pseudo, $mail, $mdp));
                      $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
                      }

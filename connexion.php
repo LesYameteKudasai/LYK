@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=94.177.233.5;dbname=espace_membre', 'root', 'iut');
+$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_POST['formconnexion'])) {
    $mailconnect = htmlspecialchars($_POST['mailconnect']);
    $mdpconnect = sha1($_POST['mdpconnect']);
    if(!empty($mailconnect) AND !empty($mdpconnect)) {
-      $requser = $bdd->prepare("SELECT * FROM membres WHERE mail = ? AND motdepasse = ?");
+      $requser = $bdd->prepare("SELECT * FROM refugie WHERE mail = ? AND motdepasse = ?");
       $requser->execute(array($mailconnect, $mdpconnect));
       $userexist = $requser->rowCount();
       if($userexist == 1) {

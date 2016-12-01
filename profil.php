@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=94.177.233.5;dbname=espace_membre', 'root', 'iut');
+$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $getid = intval($_GET['id']);
-   $requser = $bdd->prepare('SELECT * FROM membres WHERE id = ?');
+   $requser = $bdd->prepare('SELECT * FROM refugie WHERE id = ?');
    $requser->execute(array($getid));
    $userinfo = $requser->fetch();
 ?>

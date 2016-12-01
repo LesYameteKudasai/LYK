@@ -1,34 +1,34 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=94.177.233.5;dbname=espace_membre', 'root', 'iut');
+$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_SESSION['id'])) {
-   $requser = $bdd->prepare("SELECT * FROM membres WHERE id = ?");
+   $requser = $bdd->prepare("SELECT * FROM refugie WHERE id = ?");
    $requser->execute(array($_SESSION['id']));
    $user = $requser->fetch();
    if(isset($_POST['newnom']) AND !empty($_POST['newnom']) AND $_POST['newnom'] != $user['nom']) {
       $newnom = htmlspecialchars($_POST['newnom']);
-      $insertnom = $bdd->prepare("UPDATE membres SET nom = ? WHERE id = ?");
+      $insertnom = $bdd->prepare("UPDATE refugie SET nom = ? WHERE id = ?");
       $insertnom->execute(array($newnom, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
    if(isset($_POST['newprenom']) AND !empty($_POST['newprenom']) AND $_POST['newprenom'] != $user['prenom']) {
       $newprenom = htmlspecialchars($_POST['newprenom']);
-      $insertprenom = $bdd->prepare("UPDATE membres SET prenom = ? WHERE id = ?");
+      $insertprenom = $bdd->prepare("UPDATE refugie SET prenom = ? WHERE id = ?");
       $insertprenom->execute(array($newprenom, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
 
    if(isset($_POST['newpseudo']) AND !empty($_POST['newpseudo']) AND $_POST['newpseudo'] != $user['pseudo']) {
       $newpseudo = htmlspecialchars($_POST['newpseudo']);
-      $insertpseudo = $bdd->prepare("UPDATE membres SET pseudo = ? WHERE id = ?");
+      $insertpseudo = $bdd->prepare("UPDATE refugie SET pseudo = ? WHERE id = ?");
       $insertpseudo->execute(array($newpseudo, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
    if(isset($_POST['newmail']) AND !empty($_POST['newmail']) AND $_POST['newmail'] != $user['mail']) {
       $newmail = htmlspecialchars($_POST['newmail']);
-      $insertmail = $bdd->prepare("UPDATE membres SET mail = ? WHERE id = ?");
+      $insertmail = $bdd->prepare("UPDATE refugie SET mail = ? WHERE id = ?");
       $insertmail->execute(array($newmail, $_SESSION['id']));
       header('Location: profil.php?id='.$_SESSION['id']);
    }
@@ -36,7 +36,7 @@ if(isset($_SESSION['id'])) {
       $mdp1 = sha1($_POST['newmdp1']);
       $mdp2 = sha1($_POST['newmdp2']);
       if($mdp1 == $mdp2) {
-         $insertmdp = $bdd->prepare("UPDATE membres SET motdepasse = ? WHERE id = ?");
+         $insertmdp = $bdd->prepare("UPDATE refugie SET motdepasse = ? WHERE id = ?");
          $insertmdp->execute(array($mdp1, $_SESSION['id']));
          header('Location: profil.php?id='.$_SESSION['id']);
       } else {
