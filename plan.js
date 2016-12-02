@@ -20,7 +20,7 @@ var map;
 var optionsGmaps = {
         zoom: 16,
         center: centerpos,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
        
     };
 

@@ -129,7 +129,7 @@ var droite=1.909138;
 function IA(bool){
     if (bool==true){
         //Si on est dans le camp
-        document.location.href="plancamps.php?ville="+camp;
+        document.location.href="plan.php";
         
         
     }else{
@@ -150,6 +150,6 @@ function IA(bool){
 }
 
 
-function choixcamp(){
-    document.location.href="choixcamp.php";
+function allo(){
+    document.location.href="plan.php";
 }

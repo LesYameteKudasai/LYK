@@ -1,11 +1,9 @@
 <!doctype html>
 <html>
-    <?php include_once("head.php"); ?>
     <head>
         <meta charset='utf-8'>
     </head>
     <body>
-        <?php include_once("header.php"); ?>
         
         
         <div id="maposition"></div>
@@ -16,9 +14,9 @@
 <div id="hg"></div>
 <div id="bd"></div>
 
-<input type="button" onclick="document.location.href='plan.php'" value="I am already in a camp">
+<input type="button" onclick="allo();" value="I am already in a camp">
 <panel id="panel1"></panel>
-<?php include_once("footer.php"); ?>
+<!-- Chargement de l'API Google maps -->
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="IA.js"></script>
     </body>
