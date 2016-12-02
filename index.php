@@ -48,7 +48,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="Image/bg-1.jpg" class="img-responsive" alt="First slide">
+          <img class="first-slide" src="LOGOSITE1.png" height="auto" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Soyez les bienvenus sur notre site web</h1>
