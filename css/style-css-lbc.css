@@ -30,12 +30,12 @@ html {
 }
 body {
   /*Margin bottom by footer height*/
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 	min-height: 100%;
 }
 
 .container{
-	  width:1170px;
+	  width:100%;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -90,13 +90,229 @@ body {
     box-shadow: none;
 }
 
+/*Page Connexion---------*/
+#connexion{
+height:350px;
+font-size:0.9em;
+font-family:"Trebuchet MS",sans-serif;
+}
+
+#connexion form{
+width:510px;
+height:291px;
+margin:50px auto;	/* Le auto permet de centrer automatiquement le form au milieu de la page */
+padding-top:1px;	/* Permet de définir la distance entre le form et le conteneur du form */
+background:#353b41;
+background:-moz-linear-gradient(top,#464d55,#21272a);
+background:-webkit-gradient(linear,left top,left bottom,from(#464d55),to(#21272a));
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+-webkit-box-shadow:0px -1px 0px rgba(255,255,255,0.25);
+   -moz-box-shadow:0px -1px 0px rgba(255,255,255,0.25);
+        box-shadow:0px -1px 0px rgba(255,255,255,0.25);
+}
+
+#connexion form div{
+width:500px;
+height:280px;
+margin:5px auto;
+background:#d1dee4;
+background:-moz-linear-gradient(top,#beced4,#e4f0f5);
+background:-webkit-gradient(linear,left top,left bottom,from(#beced4),to(#e4f0f5));
+-webkit-box-shadow:0px 1px 1px rgba(0,0,0,1) inset;
+   -moz-box-shadow:0px 1px 1px rgba(0,0,0,1) inset;
+        box-shadow:0px 1px 1px rgba(0,0,0,1) inset;
+}
+
+#connexion form fieldset{
+margin:5px auto;
+padding:5px 0px 0px 0px;
+border:none;
+}
+
+#connexion form fieldset legend{
+width:140px;
+height:50px;
+white-space:normal;
+font-weight:bold;
+font-size:1.25em;
+color:#464d55;
+text-shadow:0px 1px 0px rgba(255,255,255,0.8);
+padding:10px 35px;
+}
+#connexion form p{
+width:400px;
+height:33px;
+margin:auto;
+margin-bottom:14px;
+}
+
+#connexion form label,#connexion form input{
+font-family:"Trebuchet MS",sans-serif;
+font-size:1.1em;
+}
+
+#connexion form label{
+display:block;
+float:left;
+width:110px;
+height:29px;
+padding-left:15px;
+color:white;
+font-weight:bold;
+padding-top:6px;
+text-shadow:0px -1px 0px rgba(0,0,0,0.2);
+-webkit-border-radius:5px 0px 0px 5px;
+   -moz-border-radius:5px 0px 0px 5px;
+        border-radius:5px 0px 0px 5px;
+background:#09c;
+background:-moz-linear-gradient(top,#51c3fa,#09c);
+background:-webkit-gradient(linear,left top,left bottom,from(#51c3fa),to(#09c));
+-webkit-box-shadow:0px 1px 1px rgba(0,0,0,1) inset;
+   -moz-box-shadow:0px 1px 1px rgba(0,0,0,1) inset;
+        box-shadow:0px 1px 1px rgba(0,0,0,1) inset;
+}
+
+#connexion form input[type="text"], #connexion form input[type="password"]{
+display:inline-block;
+width:265px;
+height:100%;
+padding-left:10px;
+font-weight:bold;
+border:none;
+color:#cecece;
+text-shadow:0px 1px 0px #000;
+background:#1f2026;
+-webkit-border-radius:0px 5px 5px 0px;
+   -moz-border-radius:0px 5px 5px 0px;
+        border-radius:0px 5px 5px 0px;
+-webkit-box-shadow:0px 1px 1px #000 inset;
+   -moz-box-shadow:0px 1px 1px #000 inset;
+        box-shadow:0px 1px 1px #000 inset;
+}
+
+#connexion form input[type="text"]:focus{
+outline:none;
+-webkit-box-shadow:0px 0px 3px #000;
+   -moz-box-shadow:0px 0px 3px #000;
+        box-shadow:0px 0px 3px #000;
+}
+
+#connexion form input[type="submit"]{
+width:95px;
+height:30px;
+margin-left:295px;
+font-size:1em;
+font-weight:bold;
+border:none;
+color:#cecece;
+text-shadow:0px -1px 0px #000;
+background:#1f2026;
+background:-moz-linear-gradient(top,#1f2026,#15161a);
+background:-webkit-gradient(linear,left top,left bottom,from(#1f2026),to(#15161a));
+-webkit-border-radius:5px;
+   -moz-border-radius:5px;
+        border-radius:5px;
+-webkit-box-shadow:0px 0px 1px #000;
+   -moz-box-shadow:0px 0px 1px #000;
+        box-shadow:0px 0px 1px #000;
+}
+
+#connexion form input[type="submit"]:hover{
+background:#343640;
+background:-moz-linear-gradient(top,#343640,#15161a);
+background:-webkit-gradient(linear,left top,left bottom,from(#343640),to(#15161a));
+}
+
+
+/*
+Partie du css pour le radio boutton
+*/
+
+
+/* SLIDE THREE */
+
+#connexion form div div{
+ width: 93px;
+ height: 26px;
+ background: #1f2026;
+ margin-left: 50px ;
+ margin-top : -20px;
+
+ -webkit-border-radius: 50px;
+ -moz-border-radius: 50px;
+ border-radius: 50px;
+ position: relative;
+
+ -webkit-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+ -moz-box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+ box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+#connexion form div div:after {
+ content: 'NON';
+ font: 12px/26px Arial, sans-serif;
+ color: #cecece;
+ position: absolute;
+ right: 10px;
+ z-index: 0;
+ font-weight: bold;
+ text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+
+#connexion form div div:before {
+ content: 'OUI';
+ font: 12px/26px Arial, sans-serif;
+ color: #cecece;
+ position: absolute;
+ left: 10px;
+ z-index: 0;
+ font-weight: bold;
+}
+
+#connexion form div div label {
+ display: block;
+ width: 34px;
+ height: 18px;
+
+ -webkit-border-radius: 50px;
+ -moz-border-radius: 50px;
+ border-radius: 50px;
+
+ -webkit-transition: all .4s ease;
+ -moz-transition: all .4s ease;
+ -o-transition: all .4s ease;
+ -ms-transition: all .4s ease;
+ transition: all .4s ease;
+ cursor: pointer;
+ position: absolute;
+ top: 1px;
+ left: 1px;
+ z-index: 1;
+
+ -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+ -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+ background: #fcfff4;
+
+ background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+
 /*Footer ----------*/
 .footer {
-  position: absolute;
+	position: absolute;
   bottom: 0;
-  width: 100%;
+	width: 100%;
+
   /* Set the fixed height of the footer here */
-  height: 60px;
+  min-height: 60px;
   background-color: #f5f5f5;
 }
 
