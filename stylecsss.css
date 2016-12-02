@@ -1,0 +1,63 @@
+body {
+  padding-top: 50px;
+}
+
+.container{
+
+  width:1170px;
+
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  width:100%;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color: #777;
+  position: center;
+}
+.carousel-inner > .item > img {
+  position: center;
+  top: 0%;
+  /*left: 0;*/
+  min-width: 100%;
+  height: 100%;
+  size: cover;
+}
+
+/*  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+
+}
+.btn-primary.outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #419fda;
+    border-color: #419fda;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+
