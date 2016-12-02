@@ -12,7 +12,7 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -30,10 +30,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-<?php include_one "head.php"?>
+<?php include_once "head.php"?>
   <body>
 <!-- Menu -->
-<?php include_one "header.php" ?>
+<?php include_once "header" ?>
 
     <div class="container">
       
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="img/MSF.jpg" alt="Second slide">
+          <img class="second-slide" src="http://www.officieldelamediation.fr/wp-content/uploads/2015/11/MSF-Via.jpg" alt="Second slide">
           <div class="container">
             <div class="col-lg-offset-2 col-lg-3 text-center carousel-caption">
               <h1></h1>
@@ -88,7 +88,7 @@
           <p> Depuis plus de quarante ans, Médecins Sans Frontières apporte une assistance médicale à des populations dont la vie ou la santé est menacée : principalement en cas de conflits armés, mais aussi d'épidémies, de pandémies, de catastrophes naturelles ou encore d'exclusion des soins. Toutes ces situations nécessitent des ressources médicales et logistiques adaptées.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="http://www.msf.fr/sites/msf.fr/files/images/Rubriques%20du%20site/MSF/Histoire/MSF119159----Medecin2.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -104,7 +104,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
