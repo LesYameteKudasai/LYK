@@ -15,6 +15,7 @@
 		{
 			$connect_success=true;
 			$sess=$r[0];
+			$type="refugie";
 		}
 	}
 	
@@ -25,12 +26,14 @@
 		{
 			$connect_success=true;
 			$sess=$r[0];
+			$type="benevole"
 		}	
 	}
 
 	if($connect_success)
 	{
 		$_SESSION['login']=$sess;
+		$_SESSION[$type]=true;
 		header('location:index.php');		
 	}
 	else
