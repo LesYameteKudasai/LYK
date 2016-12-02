@@ -16,7 +16,7 @@ if(isset($_POST['formconnexion'])) {
          $_SESSION['id'] = $userinfo['id'];
          $_SESSION['pseudo'] = $userinfo['pseudo'];
          $_SESSION['mail'] = $userinfo['mail'];
-         $_SESSION['refugie'] = TRUE;
+         $_SESSION['refugie'] = true;
          header("Location: profil.php?id=".$_SESSION['id']);
       } else {
             $requser = $bdd->prepare("SELECT * FROM benevole WHERE mail = ? AND motdepasse = ?");
@@ -27,7 +27,7 @@ if(isset($_POST['formconnexion'])) {
                $_SESSION['id'] = $userinfo['id'];
                $_SESSION['pseudo'] = $userinfo['pseudo'];
                $_SESSION['mail'] = $userinfo['mail'];
-               $_SESSION['benevole'] = TRUE;
+               $_SESSION['benevole'] = true;
                header("Location: profil.php?id=".$_SESSION['id']);
             } else { 
                $erreur = "Erreur d'authentification";
