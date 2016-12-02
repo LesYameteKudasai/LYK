@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
+$bdd = new PDO('mysql:host=localhost;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $getid = intval($_GET['id']);
