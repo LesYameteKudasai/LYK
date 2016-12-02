@@ -1,5 +1,5 @@
 <?php
-$bdd = new PDO('mysql:host=127.0.0.1;dbname=bd_msf', 'root', 'iut');
+$bdd = new PDO('mysql:host=94.177.233.5;dbname=bd_msf', 'root', 'iut');
 
 if(isset($_POST['forminscription'])) {
    $nom = htmlspecialchars($_POST['nom']);
@@ -21,9 +21,18 @@ if(isset($_POST['forminscription'])) {
                   if($mdp == $mdp2) {
                      if(preg_match('#^[A-Za-z]{1,}$#', $nom) AND preg_match('#^[A-Za-z]{1,}$#', $prenom))
                      {
-                     $insertmbr = $bdd->prepare("INSERT INTO refugie(nom, prenom, pseudo, mail, motdepasse) VALUES(?, ?, ?, ?, ?)");
-                     $insertmbr->execute(array($nom, $prenom, $pseudo, $mail, $mdp));
-                     $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
+                        if(isset($_GET('benevole')))
+                        {
+                           $insertmbr = $bdd->prepare("INSERT INTO benevole(nom, prenom, pseudo, mail, motdepasse) VALUES(?, ?, ?, ?, ?)");
+                           $insertmbr->execute(array($nom, $prenom, $pseudo, $mail, $mdp));
+                           $erreur = "Votre compte bénévole a bien été créé ! Vous pouvez maintenant vous connecter !";
+                        }
+                        else
+                        {
+                           $insertmbr = $bdd->prepare("INSERT INTO refugie(nom, prenom, pseudo, mail, motdepasse) VALUES(?, ?, ?, ?, ?)");
+                           $insertmbr->execute(array($nom, $prenom, $pseudo, $mail, $mdp));
+                           $erreur = "Votre compte réfugié a bien été créé ! Vous pouvez maintenant vous connecter !";
+                        }
                      }
                      else
                      {
