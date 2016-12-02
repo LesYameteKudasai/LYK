@@ -1,39 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-    <title>Le Bon Camp - Aide de survie des réfugiés</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-
-    <!-- Custom styles for this template -->
-    <link href="stylecsss.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <!-- <script src="assets/js/ie-emulation-modes-warning.js"></script> -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-<?php include_once "head.php"?>
+<?php include_once "head.php"; ?>
   <body>
 <!-- Menu -->
-<?php include_once "header.php" ?>
+<?php include_once "header.php"; ?>
 
     <div class="container">
       
@@ -44,27 +14,17 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="LOGOSITE1.png" height="auto" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Soyez les bienvenus sur notre site web</h1>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="http://www.officieldelamediation.fr/wp-content/uploads/2015/11/MSF-Via.jpg" alt="Second slide">
+          <img class="First slide" src="http://www.officieldelamediation.fr/wp-content/uploads/2015/11/MSF-Via.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
             </div>
           </div>
         </div>
       <div class="item">
-          <img class="third-slide" src="http://www.c-s.fr/photo/art/default/5960117-8883782.jpg?v=1381910745" alt="Third slide">
+          <img class="second-slide" src="http://www.c-s.fr/photo/art/default/5960117-8883782.jpg?v=1381910745" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>Nuit de l'info</h1>
