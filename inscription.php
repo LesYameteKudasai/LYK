@@ -23,7 +23,7 @@ if(isset($_POST['forminscription'])) {
                   if($mdp == $mdp2) {
                      if(preg_match('#^[A-Za-z]{1,}$#', $nom) AND preg_match('#^[A-Za-z]{1,}$#', $prenom))
                      {
-                        if(isset($_GET('benevole')))
+                        if(isset($_GET['benevole']))
                         {
                            $metier = $_POST['metier'];
                            $insertmbr = $bdd->prepare("INSERT INTO benevole(nom, prenom, pseudo, mail, motdepasse, nationnalite, idcamp, metier) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
@@ -152,11 +152,11 @@ if(isset($_POST['forminscription'])) {
                   {
                      echo "
                      <tr>
-                        <td align="right">
-                           <label for="metier">Métier :</label>
+                        <td align='right'>
+                           <label for='metier'>Métier :</label>
                         </td>
                         <td>
-                           <input type="text" placeholder="Rentrez votre métier" id="metier" name="metier" />
+                           <input type='text' placeholder='Rentrez votre métier' id='metier' name='metier' />
                         </td>
                      </tr>
                      ";
@@ -166,35 +166,35 @@ if(isset($_POST['forminscription'])) {
                   {
                      echo "
                      <tr>
-                        <td align="right">
-                           <label for="date_naiss">Date de naissance :</label>
+                        <td align='right'>
+                           <label for='date_naiss'>Date de naissance :</label>
                         </td>
                         <td>
-                           <input type="date" id="date_naiss" name="date_naiss" />
+                           <input type='date' id='date_naiss' name='date_naiss' />
                         </td>
                      </tr>
                      <tr>
-                        <td align="right">
-                           <label for="sexe">Sexe :</label>
+                        <td align='right'>
+                           <label for='sexe'>Sexe :</label>
                         </td>
                         <td>
-                           <input type="number" id="sexe" name="sexe" step="1" value="0" min="0" max="1" />
+                           <input type='number' id='sexe' name='sexe' step='1' value='0' min='0' max='1' />
                         </td>
                      </tr>
                      <tr>
-                        <td align="right">
-                           <label for="sexe">id état :</label>
+                        <td align='right'>
+                           <label for='sexe'>id état :</label>
                         </td>
                         <td>
-                           <input type="number" id="idetat" name="idetat" step="1" value="1" min="1" max="6" />
+                           <input type='number' id='idetat' name='idetat' step='1' value='1' min='1' max='6' />
                         </td>
                      </tr>
                      <tr>
-                        <td align="right">
-                           <label for="date_arrivee">Date d'arrivée :</label>
+                        <td align='right'>
+                           <label for='date_arrivee'>Date d'arrivée :</label>
                         </td>
                         <td>
-                           <input type="date" id="date_arrivee" name="date_arrivee" />
+                           <input type='date' id='date_arrivee' name='date_arrivee' />
                         </td>
                      </tr>
                      ";
