@@ -49,13 +49,18 @@
 					<td>
 					1
 					<?php
-					$rts=1;
+					$rts1=1;
 					
-					if ( $rts==1 )
+					if ( $rts1==1 )
 					{
 						echo(" Rendez vous à l'accueil du camps pour récupérer des affaires. ");
-						?></br><?php
-						echo "<INPUT TYPE=SUBMIT VALUE='terminer' onclick='$rts=2'>";
+						?></br><form align='center' methode="post" action="plan.php">
+									<div>
+									<?php $rts1=1; ?>
+										<input type="submit" class="button" value="Valider" />
+									</div>
+								</form><?php
+						
 					}
 					else
 					{
@@ -68,11 +73,17 @@
 					<td>
 					2
 					<?php
-					if ( $rts==1 )
+					$rts2=1;
+					if ( $rts2==1 )
 					{
 						echo(" déposez vos affaires dans votre logement. ");
-						?></br><?php
-						echo "<INPUT TYPE=SUBMIT VALUE='terminer' onclick='$rts=2'>";
+						?></br><form align='center' methode="post" action="plan.php">
+									<div>
+									<?php $rts2=1; ?>
+										<input type="submit" class="button" value="Valider" />
+									</div>
+								</form><?php
+						
 					}
 					else
 					{
@@ -85,13 +96,18 @@
 					<td>
 					3	
 					<?php
-					$rts=1;
+					$rts3=1;
 					
-					if ( $rts==1 )
+					if ( $rts3==1 )
 					{
 						echo(" Prenez une douche. ");
-						?></br><?php
-						echo "<INPUT TYPE=SUBMIT VALUE='terminer' onclick='$rts=2'>";
+						?></br><form align='center' methode="post" action="plan.php">
+									<div>
+									<?php $rts3=1; ?>
+										<input type="submit" class="button" value="Valider" />
+									</div>
+								</form><?php
+						
 					}
 					else
 					{
@@ -104,13 +120,18 @@
 					<td>
 					4	
 					<?php
-					$rts=1;
+					$rts4=1;
 					
-					if ( $rts==1 )
+					if ( $rts4==1 )
 					{
 						echo(" Passer vos tests à l'infirmerie. ");
-						?></br><?php
-						echo "<INPUT TYPE=SUBMIT VALUE='terminer' onclick='$rts=2'>";
+						?></br><form align='center' methode="post" action="plan.php">
+									<div>
+									<?php $rts4=1; ?>
+										<input type="submit" class="button" value="Valider" />
+									</div>
+								</form><?php
+						
 					}
 					else
 					{
@@ -123,13 +144,18 @@
 					<td>
 					5	
 					<?php
-					$rts=1;
+					$rts5=1;
 					
-					if ( $rts==1 )
+					if ( $rts5==1 )
 					{
 						echo(" Allez vous restaurer. ");
-						?></br><?php
-						echo "<INPUT TYPE=SUBMIT VALUE='terminer' onclick='$rts=2'>";
+						?></br><form align='center' methode="post" action="plan.php">
+									<div>
+									<?php $rts5=1; ?>
+										<input type="submit" class="button" value="Valider" />
+									</div>
+								</form><?php
+						
 					}
 					else
 					{
@@ -142,19 +168,29 @@
 					<td>
 					6	
 					<?php
-					$rts=1;
+					$rts6=1;
 					
-					if ( $rts==1 )
+					if ( $rts6==1 )
 					{
 						echo(" Aménagez votre logement. ");
-						?></br><?php
-						echo "<INPUT TYPE=SUBMIT VALUE='terminer' onclick='$rts=2'>";
+						?></br><form align='center' methode="post" action="plan.php">
+									<div>
+									<?php $rts6=1; ?>
+										<input type="submit" class="button" value="Valider" />
+									</div>
+								</form><?php
+						
 					}
 					else
 					{
 						echo("Mission accomplie");
 					}
 					?>
+					</td>
+					</tr>
+					<tr>
+					<td>
+				
 					</td>
 					</tr>
 				</table>
