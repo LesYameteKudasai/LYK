@@ -1,7 +1,8 @@
-<!--<link href="footer.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
 <footer class="footer">
   <div class="container">
-	<p class="text-muted">Contenu</p>
+	<p>&copy; 2016 Les Yamete Kumasai, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"> </script>
