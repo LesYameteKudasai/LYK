@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Le Bon Camp - Aide de survie des réfugiés</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 <?php include_once "head.php"?>
   <body>
 <!-- Menu -->
-<?php include_once "header" ?>
+<?php include_once "header.php" ?>
 
     <div class="container">
       
@@ -50,7 +50,7 @@
         <div class="item active">
           <img class="first-slide" src="Image/bg-1.jpg" class="img-responsive" alt="First slide">
           <div class="container">
-            <div class="carousel-caption">
+            <div class="col-lg-offset-2 col-lg-3 carousel-caption">
               <h1>Soyez les bienvenus sur notre site web</h1>
               <p></p>
             </div>
@@ -59,15 +59,12 @@
         <div class="item">
           <img class="second-slide" src="http://www.officieldelamediation.fr/wp-content/uploads/2015/11/MSF-Via.jpg" alt="Second slide">
           <div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
-        </div>
-      <div class="item">
-          <img class="third-slide" src="http://www.c-s.fr/photo/art/default/5960117-8883782.jpg?v=1381910745" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Nuit de l'info</h1>
+            <div class="col-lg-offset-2 col-lg-3 text-center carousel-caption">
+              <h1></h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+              <p><a class="btn btn-lg btn-primary outline" href="#" role="button">Learn more</a></p>
             </div>
           </div>
         </div>
@@ -85,26 +82,23 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">L'association Medecin sans frontiere</h2>
-          <p><b>Médecins Sans Frontières est une association médicale humanitaire internationale, créée en 1971 à Paris par des médecins et des journalistes.</b></p>
+          <h2 class="featurette-heading">L'association Medecine sans Franti</h2>
+          <p class="lead">Médecins Sans Frontières est une association médicale humanitaire internationale, créée en 1971 à Paris par des médecins et des journalistes.</p>
 
           <p> Depuis plus de quarante ans, Médecins Sans Frontières apporte une assistance médicale à des populations dont la vie ou la santé est menacée : principalement en cas de conflits armés, mais aussi d'épidémies, de pandémies, de catastrophes naturelles ou encore d'exclusion des soins. Toutes ces situations nécessitent des ressources médicales et logistiques adaptées.</p>
-          <p><b>Indépendante de tous pouvoirs politiques, militaires ou religieux, MSF agit en toute impartialité,</b></p><p> après évaluation des besoins médicaux des populations. La garantie de l'indépendance de l'association s'enracine dans son financement, assuré par la générosité de ses donateurs privés. En France, en 2014, 96% des ressources de MSF étaient d'origine privée. Aucun fonds n'est accepté du gouvernement français.</p>
-
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="http://www.msf.fr/sites/msf.fr/files/images/Rubriques%20du%20site/MSF/Histoire/MSF119159----Medecin2.jpg" alt="Generic placeholder image" height="200px">
+          <img class="featurette-image img-responsive center-block" src="http://www.msf.fr/sites/msf.fr/files/images/Rubriques%20du%20site/MSF/Histoire/MSF119159----Medecin2.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
       <div class="row featurette">
        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="http://media.msf.org/Docs/MSF/Media/CMS1/b/7/3/4/MSF137503.jpg" alt="Generic placeholder image" height="200px">
+          <img class="featurette-image img-responsive center-block" src="http://media.msf.org/Docs/MSF/Media/CMS1/b/7/3/4/MSF137503.jpg" alt="Generic placeholder image">
         </div>
 
         <div class="col-md-7">
-          <p><b>Réunies autour d’une même charte,</b> les équipes de MSF sont composées de personnel médical, logistique et administratif de dizaines de nationalités différentes, expatriés ou employés localement. Elles apportent leurs secours dans le respect des principes de l’action humanitaire et de l’éthique médicale.</p>
-          <p>A partir de ses activités et de la réalité observée sur le terrain, MSF rend compte de ses interventions. Elle peut être amenée à communiquer publiquement pour informer l'opinion du sort des populations, comme de l'ampleur, de l'efficacité ou des objectifs des secours engagés.</p><p>Refusant l’idée d’une médecine au rabais pour les plus démunis, MSF s'efforce de prodiguer des soins de qualité et de faire évoluer ses pratiques. Par la Campagne d’Accès aux Médicaments Essentiels, et depuis quelques années grâce au DNDi, les actions de MSF ont contribué à faire baisser le prix des traitements contre le sida, et à relancer la recherche et le développement de médicaments pour traiter des maladies négligées comme la maladie du sommeil.</p>
+          <p class="lead">Indépendante de tous pouvoirs politiques, militaires ou religieux, MSF agit en toute impartialité,</p><p> après évaluation des besoins médicaux des populations. La garantie de l'indépendance de l'association s'enracine dans son financement, assuré par la générosité de ses donateurs privés. En France, en 2014, 96% des ressources de MSF étaient d'origine privée. Aucun fonds n'est accepté du gouvernement français.</p>
           </div>
         </div>
     </div><!-- /.container -->
